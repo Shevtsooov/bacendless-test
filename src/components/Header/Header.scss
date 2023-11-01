@@ -1,0 +1,29 @@
+@import "../../styles/utils/colors.scss";
+
+.header {
+  padding: 5px 80px 0;
+  background-color: $grey-bg;
+
+  &__buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__button {
+    padding: 10px 15px;
+
+    color: $inActiveTab;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: 1px solid $inActiveTab;
+    border-bottom: 0;
+
+    &--active {
+      color: $activeTab;
+      background-color: $content-bg;
+      border: 1px solid  $activeTab;
+      border-bottom: 0;
+    }
+  }
+}
